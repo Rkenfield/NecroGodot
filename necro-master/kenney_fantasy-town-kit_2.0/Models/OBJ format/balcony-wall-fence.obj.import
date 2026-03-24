@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cb1pay8e7cefs"
+path="res://.godot/imported/balcony-wall-fence.obj-cd043c201d9abb3de3170a3027cb3caf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/balcony-wall-fence.obj-cd043c201d9abb3de3170a3027cb3caf.mesh"]
+
+source_file="res://kenney_fantasy-town-kit_2.0/Models/OBJ format/balcony-wall-fence.obj"
+dest_files=["res://.godot/imported/balcony-wall-fence.obj-cd043c201d9abb3de3170a3027cb3caf.mesh", "res://.godot/imported/balcony-wall-fence.obj-cd043c201d9abb3de3170a3027cb3caf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

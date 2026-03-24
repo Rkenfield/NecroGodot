@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bf068hxdufhu3"]
+
+[ext_resource type="PackedScene" uid="uid://c73qdhn7pdo57" path="res://kenney_blocky-characters_20/Models/FBX format/character-a.fbx" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://mmbvgwkxxf4u" path="res://Player.cs" id="1_onrkg"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1197012519]
+script = ExtResource("1_onrkg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=59124600]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.76692915, 0)
+shape = SubResource("CapsuleShape3D_onrkg")
+
+[node name="CharacterMesh" parent="." unique_id=1912868859 instance=ExtResource("1_4flbx")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpajawtecgpnv"
+path="res://.godot/imported/wall-wood-slope.obj-687ff261d5737ce761b70b15c3bad073.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-wood-slope.obj-687ff261d5737ce761b70b15c3bad073.mesh"]
+
+source_file="res://Models/OBJ format/wall-wood-slope.obj"
+dest_files=["res://.godot/imported/wall-wood-slope.obj-687ff261d5737ce761b70b15c3bad073.mesh", "res://.godot/imported/wall-wood-slope.obj-687ff261d5737ce761b70b15c3bad073.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

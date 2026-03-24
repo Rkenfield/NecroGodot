@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b5f31bnsenpw6"]
+
+[ext_resource type="PackedScene" uid="uid://bf068hxdufhu3" path="res://player.tscn" id="1_y8ncq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gaqdb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8ncq"]
+albedo_color = Color(0.30270165, 0.5160389, 0.19060308, 0.75686276)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jgjqi"]
+
+[node name="Main" type="Node3D" unique_id=1388827081]
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=978696606]
+transform = Transform3D(898.738, 0, 0, 0, 1, 0, 0, 0, 833.333, 0, -0.59163094, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=395376798]
+shape = SubResource("BoxShape3D_gaqdb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1026138887]
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 1, 2.761634e-05, -0.029245377, 5.7558073e-06)
+material_override = SubResource("StandardMaterial3D_y8ncq")
+mesh = SubResource("BoxMesh_jgjqi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1399786174]
+transform = Transform3D(0.803561, 0.4128382, 0.42878234, -0.5213865, 0.14069624, 0.84164184, 0.2871338, -0.89987195, 0.32830626, 0.089506626, 6.5563087, 0)
+light_color = Color(0.9999997, 0.9582079, 0.94295055, 1)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=1197012519 instance=ExtResource("1_y8ncq")]
+
+[node name="CameraPivot" type="Marker3D" parent="Player" unique_id=2143151435]
+transform = Transform3D(-1, 8.719476e-08, 6.3098566e-09, 7.3911465e-08, 0.804697, 0.5936858, 4.668877e-08, 0.5936858, -0.804697, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot" unique_id=1271223337]
+transform = Transform3D(1, -1.0658141e-14, -2.842171e-14, 3.5527137e-15, 1, 0, 0, 0, 1, 1.719623e-08, 0.5175247, 9.9234915)
