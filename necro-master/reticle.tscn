@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ei5vacbkke4m"]
+
+[ext_resource type="Script" uid="uid://bdla46qiu336y" path="res://Scripts/Reticle.cs" id="1_fvfu6"]
+[ext_resource type="PackedScene" uid="uid://cih32wp8jtt0s" path="res://kenney_graveyard-kit_5.0/Models/FBX format/fire-basket.fbx" id="2_ygrq2"]
+
+[node name="Reticle" type="CharacterBody3D" unique_id=295009552]
+script = ExtResource("1_fvfu6")
+MaxReticleDistance = 10.0
+
+[node name="fire-basket" parent="." unique_id=177820969 instance=ExtResource("2_ygrq2")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
